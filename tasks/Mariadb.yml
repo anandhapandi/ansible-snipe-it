@@ -11,7 +11,5 @@
    state: present
 
 - name: Installing Mariadb
-  apt: name={{item}}
-  with_items:
-    - mariadb-server 
-    - mariadb-client
+  shell: sudo apt install mariadb-server -y
+  shell: sudo apt install mariadb-client -y
