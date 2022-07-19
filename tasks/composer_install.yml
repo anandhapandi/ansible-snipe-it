@@ -1,6 +1,6 @@
 ---
 
 - name: Installing Composer
-  shell: sudo composer install --no-dev --prefer-source --no-interaction
+  shell: sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
   args:
     chdir: /var/www/snipeit/
