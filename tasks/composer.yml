@@ -1,6 +1,6 @@
 ---
 - name: Curl
-  shell: sudo apt install curl git
+  shell: sudo apt install curl git -y
 
 - name: To download composer 
   shell: cd ~
